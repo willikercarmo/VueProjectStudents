@@ -2,19 +2,22 @@
   <div id="app">
     <Navbar />
     <div class="marginMain">
-      <Students />
+      <!-- <Students /> -->
+      <Professors />
     </div>
   </div>
 </template>
 
 <script>
-import Students from "./components/Student/Students.vue";
-import Navbar from "./components/_nav/Navbar.vue";
+// import Students from "./components/Student/Students";
+import Professors from "./components/Professor/Professors";
+import Navbar from "./components/_nav/Navbar";
 
 export default {
   name: "App",
   components: {
-    Students,
+    // Students,
+    Professors,
     Navbar,
   },
 };
