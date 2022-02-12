@@ -64,12 +64,10 @@ export default {
       this.$http
         .post("http://localhost:3000/students", _student)
         .then((res) => res.json())
-        .then(studentOutput => {
+        .then((studentOutput) => {
           this.students.push(studentOutput);
-          this.name = '';
-        })
-
-      
+          this.name = "";
+        });
     },
     removeStudent(student) {
       this.$http
@@ -86,7 +84,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 input {
-  /* width: calc(100%-150px); */
+  width: calc(100% - 195px);
   border: 0;
   padding: 20px;
   font-size: 1.3em;
@@ -94,6 +92,7 @@ input {
   display: inline;
 }
 .btnInput {
+  width: 150px;
   border: 0px;
   padding: 20px;
   font-size: 1.3em;
